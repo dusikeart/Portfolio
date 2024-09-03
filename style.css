@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #3f8b35;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #3f8b35;
+    border-bottom: 3px solid #3f8b35;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #3f8b35;
+        border-bottom: 3px solid #3f8b35;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #3f8b35;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #3f8b35;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #3f8b35;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #3f8b35;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #3f8b35;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #3f8b35;
+    box-shadow: 0  0 25px #3f8b35;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #3f8b35;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #3f8b35;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #3f8b35;
+    color: black;
+    box-shadow: 0 0 25px #3f8b35;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #3f8b35;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+.about-me{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: -65px;
+}
+
+.skills{
+    text-align: center;
+    margin: auto;
+}
+
+.box{
+    font-size: 3.5rem;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.btn-box{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 3rem;
+    color: #3f8b35;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #3f8b35;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-box:hover{
+    transform: scale3d(1.03);
+    background-color: #3f8b35;
+    color: black;
+    box-shadow: 0 0 25px #3f8b35;
+}
+
+.topic{
+    font-size: 3rem;
+    display: inline;
+    text-align: center;
+}
+
+.per{
+    font-size: 9rem;
+    color: #3f8b35;
+    text-align: center;
+}
+
+.boxik{
+    font-size: 2.5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.gallery {
+    padding-top: 250px;
+}
+
+.gallery img {
+    margin-top: -265px;
+    position: relative;
+    width: 76vw;
+    box-shadow: 0 0 25px solid #3f8b35;
+    padding-bottom: 250px;
+    padding-top: 100px;
+}
+
+.gallerytall img {
+    position: relative;
+    width: 76vw;
+    box-shadow: 0 0 25px solid #3f8b35;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+
+.galleryvid {
+    margin-top: -210px;
+    scale: 40%;
+}
+
+.galleryvid33 {
+    margin-top: -210px;
+    scale: 40%;
+}
+
+.textvid {
+    margin-top: 70px; 
+    font-size: 5.5rem; 
+    text-align: center;
+}
+
+.vidtovid {
+    margin-top: -400px;
+}
+
+
+@media (min-width: 768px) {
+    .doublevid {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .doublevid {
+        width: 70%;
+        padding-left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .doublevid {
+        margin-top: -1450px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .vidtovid {
+        margin-top: -200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .textvid {
+        margin-top: 70px; 
+        font-size: 2.5rem; 
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galleryvid {
+        scale: 100%;
+        padding-left: 150px;
+        margin-top: -120px;
+        padding-top: 660px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galleryvid33 {
+        scale: 100%;
+        padding-left: 150px;
+        margin-top: -120px;
+        padding-top: 660px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galleryvid video {
+        scale: 100%;
+        padding-left: 150px;
+        margin-top: -900px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galleryvid33 video {
+        scale: 50%;
+        padding-left: 150px;
+        margin-top: -900px;
+    }
+}
+
+
+.spaces {
+    padding-top: -1200px;
+    margin-top: -1050px;
+}
+
+@media (min-width: 1024px) {
+    .spaces {
+        padding-top: -200px;
+        margin-top: 1px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallerytall img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallerytall img  {
+        width: 70%;
+        padding-left: 150px;
+    }
+}
+
+.talltext {
+    margin-top: 45px; 
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+    .talltext  {
+        padding-right: 200px;
+    }
+}
+
+.gallery video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    max-height: auto;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.gallery-text {
+    font-size: 2.75rem;
+    margin: auto;
+    text-align: center;
+    max-width: 50%;
+    padding: 150px 50px;
+}
+
+@media (min-width: 1024px) {
+    .textvid2 {
+        margin-top: -415px; 
+        font-size: 2.5rem; 
+        text-align: center;
+    }
+}
+
+.textvid2 {
+    margin-top: -415px; 
+        font-size: 2.5rem; 
+        text-align: center;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #3f8b35;
+    }
+}
+
+@keyframes words{
+    0%, 33%{
+        content: "3D Environment Artist";
+    }
+    34%, 66%{
+        content: "3D Artist";
+    }
+    67%, 100%{
+        content: "Grafik";
+    }
+}
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+.connttent {
+    padding-left: 129px;
+}
