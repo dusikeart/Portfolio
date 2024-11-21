@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dušan Turza - Portfolio</title>
+    <!-- Link to Google Fonts for Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply general styles */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Set background with dotted pattern */
+        body {
+            background-image: radial-gradient(circle, #333 2px, transparent 2px),
+                              radial-gradient(circle, #333 2px, transparent 2px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text inside header */
+        h1 {
+            color: #333;
+            font-weight: bold;
+            font-size: 3rem;
+            margin: 0;
+            text-decoration: underline;
+            text-decoration-color: #333;
+        }
+
+        /* White box for the text and profile image */
+        .intro-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-box p {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+            margin-top: 20px; /* Space between image and text */
+        }
+
+        .intro-box img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* Rounded corners */
+        }
+
+        /* White box for the images with sharp corners */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            width: 80%; /* Set box width to 80% of the screen */
+            max-width: 600px; /* Max width to keep it from becoming too large */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%; /* Make image scale to fit the container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: contain; /* Ensure the image fits without cropping */
+        }
+
+        /* Instagram section */
+        .instagram-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .instagram-box p {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px; /* More space between text and IG logo */
+        }
+
+        .instagram-box img {
+            width: 80px; /* Smaller Instagram logo */
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px; /* Optional: rounded corners for the logo image */
+            cursor: pointer;
+            margin-bottom: 20px; /* More space between IG logo and logo.png */
+        }
+
+        .logo-img {
+            width: 200px; /* Larger logo.png */
+            height: auto;
+        }
+
+        /* Responsive Design for mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            header {
+                padding: 30px 0;
+            }
+
+            .intro-box {
+                width: 90%; /* Increase box size to take more of the screen */
+                padding: 15px;
+            }
+
+            .image-container {
+                width: 90%; /* Increase box size to take more of the screen */
+                padding: 15px;
+            }
+
+            .instagram-box {
+                width: 90%; /* Increase box size to take more of the screen */
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                padding: 20px 0;
+            }
+
+            .intro-box {
+                width: 95%; /* Even larger for small screens */
+                padding: 10px;
+            }
+
+            .image-container {
+                width: 95%; /* Even larger for small screens */
+                padding: 10px;
+            }
+
+            .instagram-box {
+                width: 95%; /* Even larger for small screens */
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dušan Turza</h1>
+    </header>
+
+    <!-- Intro Section with Profile Image Above Text -->
+    <div class="intro-box">
+        <img src="pfp.jpg" alt="Dušan Turza Profile Picture">
+        <p>My name is Dušan Turza, I study at Secondary Vocational School Of Engineering in Považská Bystrica Slovakia. Below you can see some of my 3D art.</p>
+    </div>
+
+    <!-- First Image Box -->
+    <div class="image-container">
+        <img src="GATER.jpg" alt="GATER Image">
+    </div>
+
+    <!-- Second Image Box -->
+    <div class="image-container">
+        <img src="FR1.png" alt="FR1 Image">
+    </div>
+
+    <!-- Third Image Box with Lower DPI (Compressed Image) -->
+    <div class="image-container">
+        <img src="HighresScreenshot00002.png" alt="Highres Screenshot Image">
+    </div>
+
+    <!-- Fourth Image Box -->
+    <div class="image-container">
+        <img src="TLOUR.jpg" alt="TLOUR Image">
+    </div>
+
+    <!-- Instagram Section -->
+    <div class="instagram-box">
+        <p>You can see more of my work on my Instagram:</p>
+        <a href="https://www.instagram.com/dusikeart_" target="_blank">
+            <img class="logo-img" src="logo.png" alt="Logo">
+        </a>
+    </div>
+
+</body>
+</html>
